@@ -1,14 +1,11 @@
 在 Linux 上通过 Cloudflare Tunnel 使用 SSH 登录，本质上是把 **Cloudflare 提供的“加密隧道”** 和 **传统的“SSH 密钥认证”** 结合起来。
 
-### 版本管理
-
+```
 ubuntu:24.04 对应的镜像是 ->
 
+sjwayrhz/ubuntu:tunnel-v0.1	包含了tunnel token
+sjwayrhz/ubuntu:tunnel-v0.2 未含了tunnel token
 ```
-sjwayrhz/ubuntu:tunnel-v0.1
-```
-
-这个版本内置了hsafj.dpdns.org的token,在cloudflare上标注的是ssh
 
 以下是完整的操作步骤总结：
 
