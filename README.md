@@ -41,6 +41,8 @@ Host my-tunnel
     User root
     IdentityFile ~/.ssh/id_ed25519
     ProxyCommand /usr/bin/cloudflared access ssh --hostname %h
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
 ```
 
 > **注意：** 把 `your-domain.com` 换成你的域名，`id_ed25519` 换成你真实的私钥文件名。
